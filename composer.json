@@ -1,0 +1,16 @@
+{
+    "name": "interop-phpobjects/polite-math",
+    "type": "library",
+    "description": "Interoperability of interfaces around the Math",
+    "keywords": ["math","interop","interoperability"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Interop\\Polite\\Math\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
