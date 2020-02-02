@@ -11,6 +11,5 @@
         "psr-4": {
             "Interop\\Polite\\Math\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
