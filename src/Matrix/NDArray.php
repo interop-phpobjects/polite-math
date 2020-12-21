@@ -33,5 +33,5 @@ interface NDArray extends ArrayAccess
 
     public function reshape(array $shape) : NDArray;
 
-    public function toArray() : array;
+    public function toArray();
 }
