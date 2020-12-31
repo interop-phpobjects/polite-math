@@ -2,8 +2,10 @@
 # define PHP_INTEROP_POLITE_MATH_MATRIX_H
 
 #define PHP_INTEROP_POLITE_MATH_MATRIX_LINEAR_BUFFER_CLASSNAME "Interop\\Polite\\Math\\Matrix\\LinearBuffer"
+#define PHP_INTEROP_POLITE_MATH_MATRIX_LINEAR_BUFFER_SIGNATURE 0x66426e4c706f7249 // "IropLnBf"
 
 typedef struct {
+    zend_long signature;
     zend_long size;
     zend_long dtype;
     zend_long value_size;
@@ -15,6 +17,13 @@ static inline php_interop_polite_math_matrix_linear_buffer_t* php_interop_polite
 	return (php_interop_polite_math_matrix_linear_buffer_t*) ((char*) obj - XtOffsetOf(php_interop_polite_math_matrix_linear_buffer_t, std));
 }
 #define Z_INTEROP_POLITE_MATH_MATRIX_LINEAR_BUFFER_OBJ_P(zv) (php_interop_polite_math_matrix_linear_buffer_fetch_object(Z_OBJ_P(zv)))
+static inline int php_interop_polite_math_matrix_is_linear_buffer(php_interop_polite_math_matrix_linear_buffer_t* linear_buffer)
+{
+    if(linear_buffer->signature==PHP_INTEROP_POLITE_MATH_MATRIX_LINEAR_BUFFER_SIGNATURE)
+        return 1;
+    else
+        return 0;
+}
 
 enum php_interop_polite_math_matrix_dtype {
     php_interop_polite_math_matrix_dtype_unknown = 0,
