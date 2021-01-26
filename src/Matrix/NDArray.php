@@ -3,7 +3,7 @@ namespace Interop\Polite\Math\Matrix;
 
 use ArrayAccess;
 
-interface NDArray extends ArrayAccess
+interface NDArray extends ArrayAccess // ,Countable, Traversable
 {
     const bool  = 1;
     const int8  = 2;
