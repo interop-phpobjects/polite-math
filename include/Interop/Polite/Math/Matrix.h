@@ -40,6 +40,10 @@ enum php_interop_polite_math_matrix_dtype {
     php_interop_polite_math_matrix_dtype_float16 = 11,
     php_interop_polite_math_matrix_dtype_float32 = 12,
     php_interop_polite_math_matrix_dtype_float64 = 13,
+    php_interop_polite_math_matrix_dtype_complex16  = 14,
+    php_interop_polite_math_matrix_dtype_complex32 = 15,
+    php_interop_polite_math_matrix_dtype_complex64 = 16,
+    php_interop_polite_math_matrix_dtype_complex128 = 17,
 };
 
 #endif	/* PHP_INTEROP_POLITE_MATH_MATRIX_H */

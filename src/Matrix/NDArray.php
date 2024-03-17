@@ -18,6 +18,10 @@ interface NDArray extends ArrayAccess // ,Countable, Traversable
     const float16 = 11;
     const float32 = 12;
     const float64 = 13;
+    const complex16 = 14;
+    const complex32 = 15;
+    const complex64 = 16;
+    const complex128 = 17;
 
     public function shape() : array;
 
