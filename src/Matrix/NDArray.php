@@ -27,8 +27,14 @@ interface NDArray extends ArrayAccess // ,Countable, Traversable
 
     public function ndim() : int;
 
+    /**
+     * @return int
+     */
     public function dtype();
 
+    /**
+     * @return Buffer
+     */
     public function buffer() : ArrayAccess;
 
     public function offset() : int;
